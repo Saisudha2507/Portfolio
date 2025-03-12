@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saisudha Gonthina - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Saisudha Gonthina</span>
+            </div>
+            <div class="links">
+                <div class="links">
+                    <div class="link"><a href="#about">About</a></div>
+                    <div class="link"><a href="#skills">Skills</a></div>
+                    <div class="link"><a href="#experience">Experience</a></div>
+                    <div class="link"><a href="#projects">Projects</a></div>
+                    <div class="link"><a href="#contact">Contact</a></div>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="images/Sudha.JPG" alt="Saisudha Gonthina">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+                    Hey, I'm <span>Saisudha Gonthina</span>
+                </h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+                    <b>I'm a</b> <span></span>
+                </div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    Experienced Data Analyst with expertise in data visualization, business intelligence, and statistical analysis. Passionate about turning complex data into actionable insights.I specialize in transforming complex datasets into meaningful insights, using tools like <b>Power BI, Tableau, Python, and SQL</b>. My expertise includes <b>ETL processes, predictive analytics, and cloud-based data solutions (AWS, GCP, Azure)</b>.  
+                    I enjoy collaborating with cross-functional teams to <b>develop data-driven strategies that optimize business performance</b>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-container">
+            <h2 class="education-title">Techincal Skills</h2>
+    
+            <div class="skills-carousel">
+                <div class="skills-slider">
+                    <!-- Programming Languages -->
+                    <div class="skill-box"><i class="fa-brands fa-python"></i><span>Python</span></div>
+                    <div class="skill-box"><i class="fa-solid fa-code"></i><span>R</span></div>
+                    <div class="skill-box"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+    
+                    <!-- Data Analysis & Visualization -->
+                    <div class="skill-box"><i class="fa-brands fa-microsoft"></i><span>Power BI</span></div>
+                    <div class="skill-box"><i class="fa-brands fa-table"></i><span>Tableau</span></div>
+                    <div class="skill-box"><i class="fa-solid fa-chart-bar"></i><span>Looker Studio</span></div>
+                    <div class="skill-box"><i class="fa-solid fa-chart-line"></i><span>Pandas</span></div>
+                    <div class="skill-box"><i class="fa-solid fa-chart-area"></i><span>NumPy</span></div>
+                    <div class="skill-box"><i class="fa-solid fa-chart-pie"></i><span>Matplotlib</span></div>
+                    <div class="skill-box"><i class="fa-solid fa-chart-scatter"></i><span>Seaborn</span></div>
+    
+                    <!-- Big Data & Cloud Technologies -->
+                    <div class="skill-box"><i class="fa-solid fa-database"></i><span>Hadoop</span></div>
+                    <div class="skill-box"><i class="fa-solid fa-database"></i><span>Spark</span></div>
+                    <div class="skill-box"><i class="fa-brands fa-google"></i><span>GCP (BigQuery)</span></div>
+                    <div class="skill-box"><i class="fa-brands fa-aws"></i><span>AWS</span></div>
+    
+                    <!-- Databases -->
+                    <div class="skill-box"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+                    <div class="skill-box"><i class="fa-solid fa-database"></i><span>PostgreSQL</span></div>
+                    <div class="skill-box"><i class="fa-solid fa-database"></i><span>MongoDB</span></div>
+                    <div class="skill-box"><i class="fa-solid fa-cloud"></i><span>Azure SQL</span></div>
+                </div>
+                <!-- View All Skills Button -->
+                <button class="view-all-btn" onclick="toggleSkills()">View All Skills</button>
+
+                <!-- Skills List (Initially Hidden) -->
+                <div class="skills-list">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <p>Python, R, SQL</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data Analysis & Visualization</h3>
+                        <p>Tableau, Looker Studio, Power BI, Pandas, NumPy, Matplotlib, Seaborn</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Big Data & Cloud Technologies</h3>
+                        <p>Hadoop, Spark, Google Cloud Platform (BigQuery, Data Studio), AWS (EC2, S3, Lambda, RDS)</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Databases</h3>
+                        <p>MySQL, PostgreSQL, MongoDB, Azure SQL Database</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Services & APIs</h3>
+                        <p>RESTful APIs, GraphQL, Microsoft AI Form Recognizer</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps & CI/CD Tools</h3>
+                        <p>Git, GitHub, Jenkins, Docker, Kubernetes, Terraform</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Testing Frameworks</h3>
+                        <p>JUnit, Selenium, Mocha</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Agile & Project Management</h3>
+                        <p>Agile, Scrum, Jira, Trello</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Machine Learning & Statistical Analysis</h3>
+                        <p>Machine Learning Techniques (Regression, Classification, Clustering), SAS Enterprise Miner</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Core Competencies</h3>
+                        <p>Data Cleaning, Data Manipulation, Statistical Techniques, Collaboration</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+<!--education-->
+<section class="education-section" id="education">
+    <h2 class="education-title">Education</h2>
+    <div class="education-container">
+        
+        <!-- Flip Card 1 -->
+        <div class="education-card">
+            <div class="education-inner">
+                <div class="education-front">
+                    <h3>Master of Science</h3>
+                    <span class="education-date">2023 - 2024</span>
+                </div>
+                <div class="education-back">
+                    <h4>University of North Texas</h4>
+                    <p>Advanced coursework in Machine Learning, Big Data, and Data Visualization.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flip Card 2 -->
+        <div class="education-card">
+            <div class="education-inner">
+                <div class="education-front">
+                    <h3>Bachelor of Technology</h3>
+                    <span class="education-date">2017 - 2021</span>
+                </div>
+                <div class="education-back">
+                    <h4>Malla Reddy Institute of Technology</h4>
+                    <p>Focused on programming, software engineering, and cloud computing.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="experience-container">
+            <h2>Experience</h2>
+    
+            <div class="vertical-timeline">
+                <div class="timeline-step" onclick="toggleDetails(this)">
+                    <div class="step-dot"></div>
+                    <div class="step-content">
+                        <h3>Data Analyst</h3>
+                        <h4>Merck | TX</h4>
+                        <span class="date">Sep 2024 – Present</span>
+                        <div class="details">
+                            <li>Designed and deployed interactive dashboards using <strong>Tableau</strong> and <strong>Looker Studio</strong>, enabling business teams to analyze clinical trial data for over 15 global projects in real time.</li>
+            <li>Developed and maintained <strong>RESTful APIs</strong> using <strong>Python</strong> and <strong>Flask</strong>, automating the integration of clinical data across multiple internal platforms.</li>
+            <li>Implemented <strong>BigQuery</strong> pipelines to process and transform over 5 terabytes of pharmaceutical data, reducing manual workload by 20 hours weekly.</li>
+            <li>Streamlined <strong>ETL processes</strong> using <strong>Apache Spark</strong> and <strong>Azure SQL Database</strong>, improving the accuracy and reliability of data pipelines across multiple datasets.</li>
+            <li>Containerized key applications with <strong>Docker</strong> and orchestrated deployments using <strong>Kubernetes</strong>, achieving zero-downtime upgrades across systems.</li>
+            <li>Conducted exploratory data analysis using <strong>Pandas</strong>, <strong>NumPy</strong>, and <strong>Seaborn</strong>, identifying patterns that optimized research decision-making processes.</li>
+            <li>Collaborated with <strong>Agile teams</strong>, managing workflows with <strong>Jira</strong>, and ensuring sprint deliverables were met within defined timelines.</li></div>
+                    </div>
+                </div>
+    
+                <div class="timeline-step" onclick="toggleDetails(this)">
+                    <div class="step-dot"></div>
+                    <div class="step-content">
+                        <h3>Software Engineer</h3>
+                        <h4>Accenture | India</h4>
+                        <span class="date">Aug 2021 – Dec 2022</span>
+                        <div class="details">
+                            <li>Built a data reporting system using <strong>Power BI</strong> and <strong>PostgreSQL</strong>, delivering actionable insights for over 10 departments across the client organization.</li>
+                            <li>Developed a <strong>machine learning model</strong> with <strong>Python (scikit-learn)</strong> for predictive analysis, successfully forecasting resource demand for key client operations.</li>
+                            <li>Automated data cleaning and transformation tasks with <strong>SQL</strong> and <strong>Pandas</strong>, enabling the processing of 500,000 records in under 2 hours.</li>
+                            <li>Created and deployed a real-time analytics pipeline with <strong>AWS Lambda</strong>, reducing data latency in reporting systems by several hours.</li>
+                            <li>Engineered an event-driven architecture using <strong>Kafka</strong> and <strong>RESTful APIs</strong>, ensuring smooth communication between cloud-based services.</li>
+                            <li>Conducted <strong>A/B testing</strong> and <strong>statistical analysis</strong> using <strong>SAS Enterprise Miner</strong>, supporting product optimization for enhanced client satisfaction.</li>
+                            <li>Led <strong>data version control</strong> processes using <strong>Git</strong>, optimizing code collaboration across analytics teams, improving efficiency in managing analytics projects.</li>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="timeline-step" onclick="toggleDetails(this)">
+                    <div class="step-dot"></div>
+                    <div class="step-content">
+                        <h3>Data Analyst</h3>
+                        <h4>Trigent Software | India</h4>
+                        <span class="date">Mar 2020 – Jul 2021</span>
+                        <div class="details">
+                            
+                                <li>Designed a <strong>data visualization platform</strong> using <strong>Tableau</strong>, showcasing business metrics for over 50 clients, reducing manual reporting tasks by 12 hours weekly.</li>
+                                <li>Built and managed <strong>ETL workflows</strong> with <strong>MongoDB</strong>, processing unstructured data from various client platforms.</li>
+                                <li>Implemented a <strong>predictive analytics model</strong> using <strong>R</strong> and <strong>SAS</strong>, accurately forecasting key business KPIs for clients.</li>
+                                <li>Supervised <strong>data mining</strong> to uncover patterns and anomalies in sales data, providing recommendations that boosted sales by 10%.</li>
+                                <li>Implemented <strong>data governance frameworks</strong> to ensure data compliance with <strong>GDPR</strong> and organizational standards, reducing data privacy risks by 25%.</li>
+                                <li>Conducted <strong>statistical analysis</strong> with <strong>Matplotlib</strong> and <strong>Seaborn</strong>, enabling the identification of trends and anomalies in client data.</li>
+                                <li>Collaborated with cross-functional teams, employing <strong>Agile</strong> principles and tools like <strong>Trello</strong> for efficient project tracking and delivery.</li>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Projects Section -->
+<section class="projects" id="projects">
+    <div class="projects-container">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <!--- <img src="" alt="Project 1">-->
+                <div class="project-content">
+                    <h3>AI-Powered Data Analysis</h3>
+                    <p>Built an AI-driven dashboard to analyze market trends.</p>
+                    <span class="tech-stack"><b>Python, Flask, Tableau, AWS</b></span>
+                    <!--<a href="https://github.com/yourusername/project1" target="_blank" class="github-link"> 
+                        <i class="fab fa-github"></i> -->
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <!-- <img src="" alt="Project 2"> -->
+                <div class="project-content">
+                    <h3>ETL Data Pipeline Automation</h3>
+                    <p>Automated ETL pipeline for structured & unstructured data.</p>
+                    <span class="tech-stack"><b>Apache Spark, BigQuery, Airflow</b></span>
+                    <!--<a href="https://github.com/yourusername/project2" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> -->
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+               <!---<img src="images/Sudha.JPG" alt="Project 3">-->
+                <div class="project-content">
+                    <h3>Real-Time Sentiment Analysis</h3>
+                    <p>Live customer sentiment analysis using NLP.</p>
+                    <span class="tech-stack"><b>NLP, Python, TensorFlow, React</b></span>
+                    <!--<a href="https://github.com/yourusername/project3" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 >Contact Me</h2>
+    
+            <div class="contact-content">
+                <!-- Left Side: Contact Information -->
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> Email:gsaisudha11@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> Phone: +1 945-266-1978</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Location: Texas, USA</p>
+                    <div class="social-icons">
+                        <a href="http://linkedin.com/in/saisudha-gonthina-11a13618b" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Saisudha2507" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:gsaisudha11@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Right Side: Contact Form -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <!-- Web3Forms API Key (Ensure this stays inside the form) -->
+                    <input type="hidden" name="apikey" value="e318ad27-4f87-40e5-b8d8-7887e81d2bb6">
+                
+                    <!-- User Input Fields -->
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+                
+                    <!-- Submit Button -->
+                    <button type="submit">Send Message</button>
+                
+                    <!-- Success/Error Message (Will be handled with JavaScript) -->
+                    <p id="form-message" style="display:none; color: green; margin-top: 10px;"></p>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer" >
+        <p>&copy; 2022 Saisudha Gonthina. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({offset:0});
+    </script>
+</body>
+</html>
